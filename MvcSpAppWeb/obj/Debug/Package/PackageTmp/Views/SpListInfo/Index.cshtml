@@ -1,0 +1,268 @@
+﻿@model IEnumerable<MvcSpAppWeb.Models.SpListMetadataModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Listes du Host Web</h2>
+
+<p>
+    @*@Html.ActionLink("Create New", "Create")*@
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AllowContentTypes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BaseTemplate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BaseType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContentTypesEnabled)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CrawlNonDefaultViews)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Created)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DefaultContentApprovalWorkflowId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Direction)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DocumentTemplateUrl)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DraftVersionVisibility)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnableAttachments)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnableFolderCreation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnableMinorVersions)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnableModeration)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnableVersioning)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntityTypeName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ForceCheckout)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HasExternalDataSource)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Hidden)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ImageUrl)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IrmEnabled)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IrmExpire)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IrmReject)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsApplicationList)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsCatalog)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsPrivate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ItemCount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastItemDeletedDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastItemModifiedDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ListItemEntityTypeFullName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MajorVersionLimit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MajorWithMinorVersionsLimit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MultipleDataList)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NoCrawl)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ParentWebUrl)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ParserDisabled)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ServerTemplateCanCreateFolders)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TemplateFeatureId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AllowContentTypes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BaseTemplate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BaseType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContentTypesEnabled)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CrawlNonDefaultViews)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Created)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DefaultContentApprovalWorkflowId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Direction)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DocumentTemplateUrl)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DraftVersionVisibility)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnableAttachments)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnableFolderCreation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnableMinorVersions)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnableModeration)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnableVersioning)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntityTypeName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ForceCheckout)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HasExternalDataSource)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Hidden)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ImageUrl)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IrmEnabled)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IrmExpire)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IrmReject)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsApplicationList)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsCatalog)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsPrivate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ItemCount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastItemDeletedDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastItemModifiedDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ListItemEntityTypeFullName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MajorVersionLimit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MajorWithMinorVersionsLimit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MultipleDataList)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NoCrawl)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ParentWebUrl)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ParserDisabled)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ServerTemplateCanCreateFolders)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TemplateFeatureId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @*@Html.ActionLink("Edit", "Edit", new { id=item.Id }) |*@
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) @*|*@
+            @*@Html.ActionLink("Delete", "Delete", new { id=item.Id })*@
+        </td>
+    </tr>
+}
+
+</table>

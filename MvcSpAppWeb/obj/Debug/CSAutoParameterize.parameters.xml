@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Chaîne de connexion utilisée dans web.config par l’application pour accéder à la base de données." defaultValue="Server=tcp:i0qu8qkoxb.database.windows.net,1433;Database=MvcSpApp_db;User ID=cloudDbAdmin@i0qu8qkoxb;Password=Aa1234567;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\NodeJs\\Source\\Workspaces\\MvcSpApp\\Main\\MvcSpApp\\MvcSpAppWeb\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>

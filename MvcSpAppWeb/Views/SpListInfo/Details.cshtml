@@ -1,0 +1,36 @@
+﻿@model List<string>
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+@ViewBag.list
+
+<table class="table">
+
+    <tr>
+        @for (int i = 0; i < ViewBag.itemFieldsCount; i++)
+        {
+            <th>
+                @Model[i]
+            </th>
+        }
+    </tr>
+
+    @for (int j = ViewBag.itemFieldsCount; j < Model.Count; j+=ViewBag.itemFieldsCount)
+    {
+        <tr>
+
+            @for (int k = j ; k < ViewBag.itemFieldsCount+j; k++)
+            {
+                <td>
+                    @Model[k]
+                </td>
+            }
+
+        </tr>
+
+    }
+
+</table>

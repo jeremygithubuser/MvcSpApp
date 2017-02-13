@@ -1,0 +1,90 @@
+﻿@model MvcSpAppWeb.ViewModels.AboutViewModel
+@{
+    ViewBag.Title = "About";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-md-7 col-xs-10">
+            <div class="well panel panel-default">
+                <div class="panel-body">
+                    <div class="row">
+                        @*<div class="col-xs-12 col-sm-4 text-center">
+                            <img src="@Model.PictureUrl.value" alt="" class="center-block img-circle img-thumbnail img-responsive">
+                            <ul class="list-inline ratings text-center" title="Ratings">
+                                <li><a href="#"><span class="fa fa-star fa-lg"></span></a></li>
+                                <li><a href="#"><span class="fa fa-star fa-lg"></span></a></li>
+                                <li><a href="#"><span class="fa fa-star fa-lg"></span></a></li>
+                                <li><a href="#"><span class="fa fa-star fa-lg"></span></a></li>
+                                <li><a href="#"><span class="fa fa-star fa-lg"></span></a></li>
+                            </ul>
+                        </div>*@
+                        <!--/col-->
+                        <div class="col-xs-12 col-sm-8">
+                            <h2>@Html.DisplayFor(m => m.DisplayName)</h2>
+                            <p><strong>Email: </strong>@Html.DisplayFor(m => m.Email)</p>
+                            <p><strong>SharePoint Id: </strong>@Html.DisplayFor(m => m.SharePointId)</p>
+                            <p>
+                                <strong>Skills: </strong>
+                                <span class="label label-info tags">html5</span>
+                                <span class="label label-info tags">css3</span>
+                                <span class="label label-info tags">jquery</span>
+                                <span class="label label-info tags">bootstrap3</span>
+                            </p>
+                        </div>
+                        <!--/col-->
+                        <div class="clearfix"></div>
+                        <div class="col-xs-12 col-sm-4">
+                            <h2><strong>@Model.HostWebListCount.value Listes </strong></h2>
+                            <p><small>Listes SharePoint</small></p>
+                            @Html.ActionLink("Voir toutes les listes", "Index", "SpListInfo", routeValues: null, htmlAttributes: new { @class = "btn btn-info" })
+                        </div>
+                        <!--/col-->
+                        @*<div class="col-xs-12 col-sm-4">
+                            <h2><strong>245</strong></h2>
+                            <p><small>Following</small></p>
+                            <button class="btn btn-info btn-block"><span class="fa fa-user"></span> View Profile </button>
+                        </div>
+                        /col
+                        <div class="col-xs-12 col-sm-4">
+                            <h2><strong>43</strong></h2>
+                            <p><small>Snippets</small></p>
+                            <button type="button" class="btn btn-primary btn-block"><span class="fa fa-gear"></span> Options </button>
+                        </div>*@
+                        <!--/col-->
+                    </div>
+                    <!--/row-->
+                </div>
+                <!--/panel-body-->
+            </div>
+            <!--/panel-->
+        </div>
+        <!--/col-->
+        <!--col-->
+        <div class="col-md-5 col-xs-10">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="active"><a href="#rToken" role="tab" data-toggle="tab">RefreshToken</a></li>
+                <li><a href="#aToken" role="tab" data-toggle="tab">AccessToken</a></li>
+                <li><a href="#aOaToken" role="tab" data-toggle="tab">AppOnlyAccessToken</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane active" id="rToken">@Model.RefreshToken</div>
+                <div class="tab-pane" id="aToken">@Model.AccessToken</div>
+                <div class="tab-pane" id="aOaToken">@Model.AppOnlyAccessToken</div>
+            </div>
+        </div>
+        <!--/col-->
+    </div>
+    <!--/row-->
+</div>
+<!--/container-->
+
+
+
+
+
+
+
+
